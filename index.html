@@ -48,16 +48,7 @@
       z-index: 9999;
     }
   </style>
-  <script>
-    function showConfetti() {
-      const confettiContainer = document.getElementById('confetti-container');
-      confettiContainer.style.display = 'block';
-      setTimeout(() => {
-        confettiContainer.style.display = 'none';
-      }, 3000);
-    }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.1.1/dist/canvas-confetti.min.js"></script>
+ 
 </head>
 <body>
   <h1>Happy Birthday!</h1>
@@ -71,6 +62,16 @@
   <div id="confetti-container"></div>
   
   <button class="button" onclick="showConfetti()">Open Surprise</button>
+   <script>
+    function showConfetti() {
+      const confettiContainer = document.getElementById('confetti-container');
+      confettiContainer.style.display = 'block';
+      setTimeout(() => {
+        confettiContainer.style.display = 'none';
+      }, 3000);
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.1.1/dist/canvas-confetti.min.js"></script>
   
   <script>
     const confettiContainer = document.getElementById('confetti-container');
